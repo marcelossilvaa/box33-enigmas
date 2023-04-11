@@ -35,9 +35,6 @@ export function Header() {
           <a href="#boxes" className="hover:text-yellow">
             Boxes
           </a>
-          <a href="#comunidade" className="hover:text-yellow">
-            Comunidade
-          </a>
           <a href="#sobre" className="hover:text-yellow">
             Sobre
           </a>
