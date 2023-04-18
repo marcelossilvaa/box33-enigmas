@@ -15,6 +15,13 @@
     background-color: #0f1819;
     color: #dddada;
   }
+  textarea:focus,
+  input:focus,
+  select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
   .navbar {
     background: transparent;
     height: 100px;
@@ -78,5 +85,14 @@
   }
   .footer {
     background-image: linear-gradient(to top, #9aa36f 0%, #0f1819 100%);
+  }
+
+  #inputRiddle {
+    border: none;
+    border-bottom: 4px solid black;
+    transition: border-bottom-color 0.2s ease-in-out;
+  }
+  #inputRiddle:hover {
+    border-bottom-color: rgb(234 179 8);
   }
 }

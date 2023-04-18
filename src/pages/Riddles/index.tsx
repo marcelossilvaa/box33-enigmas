@@ -1,17 +1,20 @@
-import { Riddle } from './components/Riddle/riddle';
+import { riddles } from '../../@helpers/riddles';
+import { Riddle } from '../../pages/Riddles/components/Riddle';
 
 export function RiddlesPage() {
   return (
     <div className="mt-28 flex justify-center">
-      <main className="h-[calc(100vh-300px)] bg-black">
-        <Riddle
-          title={['Box 1 | Riddle 1', 'Categoria: Personalidades']}
-          hint={[
-            'Um gênio que viveu há muitos séculos, mas suas obras ainda são celebradas.',
-            'Seu legado influenciou o teatro, a literatura e a cultura popular por séculos.',
-          ]}
-          image="https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg"
-        />
+      <main className="h-[calc(100vh-255px)] bg-black min-w-full flex overflow-hidden">
+        {riddles.map(riddle => {
+          return (
+            <Riddle
+              key={riddle.id}
+              title={[riddle.title[0], riddle.title[1]]}
+              hint={[riddle.hint[0], riddle.hint[1]]}
+              image={riddle.image}
+            />
+          );
+        })}
       </main>
     </div>
   );
