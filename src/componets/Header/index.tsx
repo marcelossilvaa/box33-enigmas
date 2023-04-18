@@ -28,7 +28,7 @@ export function Header() {
           </NavLink>
         </div>
 
-        <div className="text-white text-lg flex gap-4">
+        <div className=" text-white text-lg flex gap-4">
           <a href="#home" className="hover:text-yellow">
             Home
           </a>

@@ -10,7 +10,10 @@ export default {
           100: '#414141',
         },
         white: '#dddada',
-        yellow: '#FBFF2A',
+        yellow: {
+          100: '#FBFF2A',
+          500: '#eab308',
+        },
         blue: '#1a2a3a',
       },
 

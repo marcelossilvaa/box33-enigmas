@@ -24,7 +24,7 @@
     font-size: 1.2rem;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 998;
     width: 100%;
     transition: 1s;
   }

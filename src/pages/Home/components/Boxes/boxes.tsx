@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import img1 from '../../assets/homepage/boxes/img1.jpg';
-import img2 from '../../assets/homepage/boxes/img2.jpg';
-import img3 from '../../assets/homepage/boxes/img3.jpg';
-import img4 from '../../assets/homepage/boxes/img4.jpg';
+import img1 from '../../../../assets/homepage/boxes/img1.jpg';
+import img2 from '../../../../assets/homepage/boxes/img2.jpg';
+import img3 from '../../../../assets/homepage/boxes/img3.jpg';
+import img4 from '../../../../assets/homepage/boxes/img4.jpg';
 import { useState, useEffect, useRef } from 'react';
 import { Play } from 'phosphor-react';
+import { NavLink } from 'react-router-dom';
 
 const boxes = [
   {
@@ -35,7 +36,9 @@ export function Boxes() {
 
   useEffect(() => {
     if (carousel.current) {
+      //@ts-ignore
       const scrollWidth = carousel.current.scrollWidth;
+      //@ts-ignore
       const offsetWidth = carousel.current.offsetWidth;
       console.log(scrollWidth, offsetWidth);
       setWidth(scrollWidth - offsetWidth);
@@ -74,9 +77,11 @@ export function Boxes() {
                   <h2 className="text-lg" id="item">
                     {item.description}
                   </h2>
-                  <button className="flex justify-center items-center text-base border-[1px] rounded-lg w-28 p-1 gap-1 bg-black-500">
-                    <Play size={24} /> START
-                  </button>
+                  <NavLink to="./riddlespage">
+                    <button className="flex justify-center items-center text-base border-[1px] rounded-lg w-28 p-1 gap-1 bg-transparent">
+                      <Play size={24} /> START
+                    </button>
+                  </NavLink>
                 </div>
               </motion.div>
             ))}
