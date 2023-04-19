@@ -24,7 +24,7 @@ export function Header() {
       <header className="mx-auto max-w-[72rem] w-full max-xl:w-[95%] flex items-center justify-between h-28 ">
         <div className="">
           <NavLink to="/">
-            <img src={Logo} alt="" className="w-[12rem] " />
+            <img src={Logo} alt="" className="w-[10rem] sm:w-[12rem]" />
           </NavLink>
         </div>
 
