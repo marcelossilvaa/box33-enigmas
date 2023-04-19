@@ -40,7 +40,7 @@ export function Boxes() {
       const scrollWidth = carousel.current.scrollWidth;
       //@ts-ignore
       const offsetWidth = carousel.current.offsetWidth;
-      console.log(scrollWidth, offsetWidth);
+      // console.log(scrollWidth, offsetWidth);
       setWidth(scrollWidth - offsetWidth);
     }
   }, [carousel]);
@@ -48,7 +48,7 @@ export function Boxes() {
   return (
     <div id="boxes">
       <h1 className="flex justify-center text-xl pt-8">Boxes</h1>
-      <div className="mx-auto max-w-[72rem] w-full max-xl:w-[90%] flex items-center justify-center">
+      <div className="mx-auto max-w-[72rem] w-full max-xl:w-[95%] flex items-center justify-center">
         <motion.div
           ref={carousel}
           className="cursor-grab overflow-hidden"

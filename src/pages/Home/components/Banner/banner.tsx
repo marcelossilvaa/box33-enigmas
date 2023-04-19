@@ -8,8 +8,8 @@ interface BannerProps {
 export function Banner({ title, subTitle, subTitle2 }: BannerProps) {
   return (
     <>
-      <section className="banner">
-        <div className="mx-auto max-w-[72rem] w-full max-xl:w-[90%]">
+      <section className="banner" id="home">
+        <div className="mx-auto max-w-[72rem] w-full max-xl:w-[95%]">
           <div className="flex flex-col justify-center h-[90vh]">
             <h1 className="text-xl drop-shadow-md sm:text-xxl" id="item">
               {title[0]}

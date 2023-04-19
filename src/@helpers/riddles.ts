@@ -7,7 +7,7 @@ export const riddles = [
       'Seu legado influenciou o teatro, a literatura e a cultura popular por séculos.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB4Hw6qv73hDmogB0uMICDXiuNUAGKB_uJJmj3wSuJ4oP73w1FdH0VNZflV5bU9bztqQ9W7EuyM4NhUWUy8eUOefjtbqy836ohxBBcNrZASHSoYoMFXTSPFwnCBqK5Jf-pdkUl48piTgFqU-wJk0cBEiBhPS2tkTDRMwsNBxOrwOFPzf1sesHP5515aa5JYsY3ptjAQpLPavTY74HFSkTDwoxEXxRsA-Nu64TlWdz3MBucQyuFkEgiYSaPTvwr6BvZlYapSqJvAXvcTvF1FKfIRH-E97wxN6H9Hf0HtrfCNBna6LALvHYusERz8ysZPE7xWTf7lE_30-C9HXGpNJsCiE7cuGC_YT84uMGSLtX--ZzkyYjkS3HzMcDu7Dja2cKYQ/p.jpeg',
     response: 'William Shakespeare',
   },
   {
@@ -18,7 +18,7 @@ export const riddles = [
       'Renascentista.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB77Jodou23pLu6T14S1UcjC8l4Xn_GHhlM_zQOK0MkDQ3Yt89takmYfIIA39nCo5ld6Ea9x-oW9TTUSLX48T-NUc3p9vI_LWMpIJHPCQA5Ipp_jFAmOoBvANuIFejr-59HxyXdIPmlmnZu0vWAjKqJoqXUiSjHsOJ1GRbA5U1ic_teTlPGewnnPuyZwCjIj3xVvbOHeunGKX7P-Sla55cM0TU8hUSmn_S7w5GGcU9UahuqpsXx-BpkHCzhDnLkbsQIRv2emjdv6rDrk6PqwwKRYwi8BIvQj9RvTntd7C741zF7D2D7FPYlU9ysvrpz24av3TRcsoVthqKPeCKhMNyhuum8PxOUlOcRtLtp-9HkDk_D5_T0PPqEPqSC0784eEx4/p.png',
     response: 'Leonardo da Vinci',
   },
   {
@@ -29,7 +29,7 @@ export const riddles = [
       'O clássico dos clássicos.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB5X1G6Kp78JTc8iP9LMSahWrRBlsyQiywFC0EuAqniOyEV_37kSTvLcJx9oGBTx2VIwKqe2RRbtBRLqCtz87gIkEQbC-eVmHVbFFVv-HxsKefezuQql2fUyaaQJp1x2UugVac_X2ZucBBCnRAfR3Ve8cSk4T-5pStMd9t-bd1TeD2XTDmutKrjdLXBWFr8aIfX1NO4F2Iy13z8n4ThE-Wug4a8cnUHARlYde-DmY7hGogEkgR4StGL4IaUBZX9x_-2lXLIMFFrXULR_FpJzsweFw442TyvX9Gr5H6wZcn3qpvUWqJu5cdIovGVaOk62EUEpiuohSNtqOEM8ornld_09MyPPr198C0bhBlyCZn3OsILqgrnCYjQXYfTFllQAD-_rNt_ksA-9DXAIsHRjBnT0/p.jpeg',
     response: 'Beethoven',
   },
   {
@@ -40,7 +40,7 @@ export const riddles = [
       'Sua arte reflete vida turbulenta, com relacionamentos tumultuados e Guerra Civil.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB72JRto4YPnAKiTRs_ITpoidja4sHlD9QuN7lViF6fqH7_q1jDh2aYTgaNi6I7cJpeNZ-zeP1hf2VMrz7U3NpJytfXcGzmNX9YZyzwr_w1Y8VQ7A5OGM5zsv03qEL9KEu71dsvC425-w87OFu7ih5z3U9ultAd61CGaFGESZje7bKjUwB2Y44feBdjiI9Y7YilOzkUMVMtE40seaY1OjYGWmiZmIHsVXG_FNNMS5KJDQYLJFTlabOIi5iL_I2P7tciQW7guJPvWxxw2g0Hx71m4vb00o4IpVCAAgu8SgNdxF2vFqyRqPE5R-AvacWhp0gceeMpj-Xqc2io0XDoIcDvWfT5uKCUoMEr5EG_tlDDdN3r87c-jAr6zzYYolcIqVLAsKUVkhBpNZHzQXmpL1Ws4/p.jpeg',
     response: 'Pablo Picasso',
   },
   {
@@ -51,7 +51,7 @@ export const riddles = [
       'Sua arte explora sua identidade, incluindo sua mexicanidade e sua luta com a saúde e a sexualidade.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB6j4IDGu6wNPJwcpjkGsFbfoRcjm71b0jm0Ty2_WbSqE1XiLcpbjPwHSuhnf_yFyt8yGbyVxD-q8iYkbTo9C9zeDse8GKzLXJT90JZ6mMpgwcs-m0OZoarcy8hzzxIKY0sa8mrnjEcP-sCvCYTx_YdkNWzZ1UUoDaid2fL-BdDfalJzvDsjnou-F1LDnGpPXEVdZR62V0KFFbDuTndgJqQfIT9t2oJfghVAaR8Q2nFkjySRSceZuaqmnL4-4wqtwujQDWD_tQHtvUib_aEOUwBN_ToX6MANx2u9a3oRZPI3jC_Yf5kJYJCFii0TRFeL3XfpiE41EeqLPr0hcOFcQbW40e4lpCgYIXW_nCVUc7eG4-CxoimC1cKBtvg_HXwm5b0/p.jpeg',
     response: 'Frida Kahlo',
   },
   {
@@ -62,7 +62,7 @@ export const riddles = [
       'Comédia física e patética torna-o um ícone cultural e artístico duradouro.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB7YussQJHJgcwPAKhnOqE8nXhJqkTET6GyKtk5IjkacCCRX26EnJ6JG1N4TBaDqpgzivoPRPwNF0ULpf_nrB3VdXdrWhcPRMqcj3UhEKGd-r6-TWR7hA8O3M-uI5UAthiL1ZfSr0M_UA6qLADYrlOaEA7-yy3vSNTuUchS0dBa1xOpNFeZsv6yyUgTAL0vCjP4gYUjjqbYrNOHYZ5Cetaiai5jER7gVWHyhr0MxIvKL7m3bPN3hOsOKEk5mvXUNilPJx4rXvDs9YUL2TjE3745ip_mv_4gUaOsE_AB6QIVN9F9c6X7v-zPDAjswzwhRQGI8urPDZ8EXPbSU5CkPJ_DF-QXzrXIMunNnvVFerDeLzerVwCPKdF0F_rNHtzMd5g4/p.jpeg',
     response: 'Charlie Chaplin',
   },
   {
@@ -73,7 +73,7 @@ export const riddles = [
       '... minhas heroínas lutaram por seu lugar em um mundo dominado pelos homens.',
     ],
     image:
-      'https://conteudo.imguol.com.br/c/entretenimento/ab/2019/12/09/batman-1575900915630_v2_3x4.jpg',
+      'https://previews.dropbox.com/p/thumb/AB5hxMam8ItxrtCPWamqHcVRfzKuX-zf0iFOW64icAE5v43Y8n9SOA79_RKOrFU-pcf-xXR31KGnnrTPIDS1M5CuimjAaszT-gnK4rHRT8ANvmC0eLBBguS-WO7PgbT30ZzbQ7CF118QxvPjF-FaHAcD7ec8ZbZ4FPyNGK90itbLGwT7wq656UWPH60asoe9cGECPEbxSb_ch9dV9VbPWzFORC-78DDxUJNLO37zSdk7_Qpe5PccxOC9lEsjwtbZVuwFdEau76lVFCw4GpCMD7eEt0vmVcF3X6i7dYvlZxMupSkozZhNiZ9Nx9fLe5l2TRUn7yOZANk6pTxUlNorjlT6k_gJS-_tF0hhjdhqh6hkk1TCaE11bRsF0_KxpEnFwDA/p.png',
     response: 'Jane Austen',
   },
 ];

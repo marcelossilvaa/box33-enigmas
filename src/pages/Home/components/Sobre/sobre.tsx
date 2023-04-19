@@ -2,7 +2,7 @@ import { WhatsappLogo, InstagramLogo, ArrowUp } from 'phosphor-react';
 
 export function Sobre() {
   return (
-    <div className="mx-auto max-w-[72rem] w-full max-xl:w-[90%]">
+    <div className="mx-auto max-w-[72rem] w-full max-xl:w-[95%]" id="sobre">
       <h1 className="flex justify-center text-xl pt-8 ">Sobre</h1>
 
       <div className="flex justify-center text-justify flex-col gap-4  col-span-3">
