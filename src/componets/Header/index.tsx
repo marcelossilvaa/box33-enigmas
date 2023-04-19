@@ -21,14 +21,14 @@ export function Header() {
 
   return (
     <div className={navbar ? 'navbar active' : 'navbar'}>
-      <header className="mx-auto max-w-[72rem] w-full max-xl:w-[90%] flex items-center justify-between h-28 ">
+      <header className="mx-auto max-w-[72rem] w-full max-xl:w-[95%] flex items-center justify-between h-28 ">
         <div className="">
           <NavLink to="/">
-            <img src={Logo} alt="" className="w-[12rem]" />
+            <img src={Logo} alt="" className="w-[12rem] " />
           </NavLink>
         </div>
 
-        <div className=" text-white text-lg flex gap-4">
+        <div className=" text-white text-[20px] flex gap-2 sm:text-lg sm:gap-4">
           <a href="#home" className="hover:text-yellow">
             Home
           </a>
