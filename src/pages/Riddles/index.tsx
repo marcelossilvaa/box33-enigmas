@@ -1,12 +1,12 @@
 import { useRef } from 'react';
-import { riddles } from '../../@helpers/riddles';
-import { Riddle } from '../../pages/Riddles/components/Riddle';
+import { dataRiddles } from '../../@helpers/dataRiddles';
+import { RiddleComponent } from './components/RiddleComponent';
 
 export function RiddlesPage() {
   const sliderRef = useRef<HTMLDivElement>(null);
 
   function onChangeSlider(task: string) {
-    const [{ response }] = riddles;
+    const [{ response }] = dataRiddles;
     if (task === response) {
       sliderRef.current?.scrollTo({
         left: (sliderRef.current.scrollLeft += sliderRef.current.offsetWidth),
@@ -23,13 +23,13 @@ export function RiddlesPage() {
         className="bg-black min-w-full flex overflow-hidden"
         ref={sliderRef}
       >
-        {riddles.map(riddle => {
+        {dataRiddles.map(dataRiddles => {
           return (
-            <Riddle
-              key={riddle.id}
-              title={[riddle.title[0], riddle.title[1]]}
-              hint={[riddle.hint[0], riddle.hint[1]]}
-              image={riddle.image}
+            <RiddleComponent
+              key={dataRiddles.id}
+              title={[dataRiddles.title[0], dataRiddles.title[1]]}
+              hint={[dataRiddles.hint[0], dataRiddles.hint[1]]}
+              image={dataRiddles.image}
               onChangeSlider={onChangeSlider}
             />
           );

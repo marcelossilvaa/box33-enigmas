@@ -1,4 +1,4 @@
-export const riddles = [
+export const dataRiddles = [
   {
     id: 1,
     title: ['Box 1 | Riddle 1', 'Categoria: Personalidades'],

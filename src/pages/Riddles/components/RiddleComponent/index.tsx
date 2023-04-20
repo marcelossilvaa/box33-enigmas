@@ -1,8 +1,6 @@
-import { useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import * as z from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { riddles } from '../../../../@helpers/riddles';
 
 const RiddleFormSchema = z.object({
   task: z.string(),
@@ -17,7 +15,12 @@ interface RiddleProps {
   onChangeSlider: (task: string) => void;
 }
 
-export function Riddle({ title, hint, image, onChangeSlider }: RiddleProps) {
+export function RiddleComponent({
+  title,
+  hint,
+  image,
+  onChangeSlider,
+}: RiddleProps) {
   const { register, handleSubmit } = useForm<RiddleFormInput>({
     resolver: zodResolver(RiddleFormSchema),
   });
