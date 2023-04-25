@@ -18,7 +18,7 @@ export function RiddlesPage() {
   }
 
   return (
-    <div className="mt-28 flex justify-center">
+    <div className="min-h-[72vh] mt-28 flex justify-center">
       <main
         className="bg-black min-w-full flex overflow-hidden"
         ref={sliderRef}

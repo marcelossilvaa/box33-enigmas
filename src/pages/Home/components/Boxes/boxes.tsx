@@ -28,6 +28,7 @@ const boxes = [
     category: 'Universo',
     description: '7 riddles',
   },
+  
 ];
 
 export function Boxes() {

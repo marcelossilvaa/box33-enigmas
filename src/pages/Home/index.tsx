@@ -11,6 +11,7 @@ export function HomePage() {
         subTitle2={`Primeiro box disponível`}
       />
       <Boxes />
+      <Boxes />
       <Sobre />
     </>
   );
