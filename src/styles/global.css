@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 @layer base {
   * {
     margin: 0;
@@ -38,6 +36,7 @@
   .navbar.active {
     background: black;
     transition: 1s;
+    opacity: 0.9;
   }
 
   .banner {
@@ -94,5 +93,33 @@
   }
   #inputRiddle:hover {
     border-bottom-color: rgb(234 179 8);
+  }
+
+  .temperatureBar {
+    width: 150px;
+    height: 7px;
+    background: rgb(242, 15, 13);
+    background: linear-gradient(
+      294deg,
+      rgba(242, 15, 13, 1) 0%,
+      rgba(0, 198, 255, 1) 100%
+    );
+  }
+
+  #button {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), transparent 100%);
+  }
+
+  .animate-content {
+    animation: fade-in 1s ease;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }

@@ -1,7 +1,9 @@
 import { Outlet } from 'react-router-dom';
 import { Footer } from '../../componets/Footer';
 import { Header } from '../../componets/Header';
-import React, { useEffect, useState } from 'react';
+import { HeaderRiddles } from '../../componets/HeaderRiddles';
+import { Route, Routes } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 export function DefaultLayout() {
   const [activeColor, setActive] = useState(false);
@@ -18,8 +20,11 @@ export function DefaultLayout() {
   }, []);
 
   return (
-    <div>
-      <Header />
+    <div className="animate-content">
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/riddlespage" element={<HeaderRiddles />} />
+      </Routes>
       <Outlet />
       <Footer />
     </div>

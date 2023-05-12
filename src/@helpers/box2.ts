@@ -1,4 +1,4 @@
-export const dataRiddles = [
+export const box2 = [
   {
     id: 1,
     title: ['Box 1 | Riddle 1', 'Categoria: Personalidades'],
@@ -7,7 +7,7 @@ export const dataRiddles = [
       'Seu legado influenciou o teatro, a literatura e a cultura popular por séculos.',
     ],
     image:
-      'https://previews.dropbox.com/p/thumb/AB4Hw6qv73hDmogB0uMICDXiuNUAGKB_uJJmj3wSuJ4oP73w1FdH0VNZflV5bU9bztqQ9W7EuyM4NhUWUy8eUOefjtbqy836ohxBBcNrZASHSoYoMFXTSPFwnCBqK5Jf-pdkUl48piTgFqU-wJk0cBEiBhPS2tkTDRMwsNBxOrwOFPzf1sesHP5515aa5JYsY3ptjAQpLPavTY74HFSkTDwoxEXxRsA-Nu64TlWdz3MBucQyuFkEgiYSaPTvwr6BvZlYapSqJvAXvcTvF1FKfIRH-E97wxN6H9Hf0HtrfCNBna6LALvHYusERz8ysZPE7xWTf7lE_30-C9HXGpNJsCiE7cuGC_YT84uMGSLtX--ZzkyYjkS3HzMcDu7Dja2cKYQ/p.jpeg',
+      'https://pbs.twimg.com/profile_images/1289324739794735104/mQoHcZfq_400x400.jpg',
     response: 'William Shakespeare',
   },
   {
@@ -18,7 +18,7 @@ export const dataRiddles = [
       'Renascentista.',
     ],
     image:
-      'https://previews.dropbox.com/p/thumb/AB77Jodou23pLu6T14S1UcjC8l4Xn_GHhlM_zQOK0MkDQ3Yt89takmYfIIA39nCo5ld6Ea9x-oW9TTUSLX48T-NUc3p9vI_LWMpIJHPCQA5Ipp_jFAmOoBvANuIFejr-59HxyXdIPmlmnZu0vWAjKqJoqXUiSjHsOJ1GRbA5U1ic_teTlPGewnnPuyZwCjIj3xVvbOHeunGKX7P-Sla55cM0TU8hUSmn_S7w5GGcU9UahuqpsXx-BpkHCzhDnLkbsQIRv2emjdv6rDrk6PqwwKRYwi8BIvQj9RvTntd7C741zF7D2D7FPYlU9ysvrpz24av3TRcsoVthqKPeCKhMNyhuum8PxOUlOcRtLtp-9HkDk_D5_T0PPqEPqSC0784eEx4/p.png',
+      'https://previews.dropbox.com/p/thumb/AB5ZvzJGZTB9rlvFiW3jB6EWrGghHWbQpH8QC10U1vK_4HtDgW6hpQXbOki1o9mJAzq4AIjEU_abKVOf5CPRbEi0pWys74fVcbYJhJq43Hq-AOQxjNgCNZ5A720SvUy5X82D1D0GQzfXqGfSzuT29IZ0L9wxC6sLALVzngz6uTgUAlsw2T0J6tTAkCncLqpaXAxof08gqUYnumUCCt9AS1n3qoi8wlX0ainmULs22ManTdoLIbycYFCNABFXu0aAh9pIiKNE46X98roI23VJOSad8nZtRsLWTHS5PXh7KsXpOm28LRdgq6zIW4jrtTSHotJAZuUerYxj-Fb8Q_NBFesmLVfauzBuaEgMK5obuXYBVtUepLOCAk5H3288OMMkZz8/p.png',
     response: 'Leonardo da Vinci',
   },
   {
@@ -29,7 +29,7 @@ export const dataRiddles = [
       'O clássico dos clássicos.',
     ],
     image:
-      'https://previews.dropbox.com/p/thumb/AB5X1G6Kp78JTc8iP9LMSahWrRBlsyQiywFC0EuAqniOyEV_37kSTvLcJx9oGBTx2VIwKqe2RRbtBRLqCtz87gIkEQbC-eVmHVbFFVv-HxsKefezuQql2fUyaaQJp1x2UugVac_X2ZucBBCnRAfR3Ve8cSk4T-5pStMd9t-bd1TeD2XTDmutKrjdLXBWFr8aIfX1NO4F2Iy13z8n4ThE-Wug4a8cnUHARlYde-DmY7hGogEkgR4StGL4IaUBZX9x_-2lXLIMFFrXULR_FpJzsweFw442TyvX9Gr5H6wZcn3qpvUWqJu5cdIovGVaOk62EUEpiuohSNtqOEM8ornld_09MyPPr198C0bhBlyCZn3OsILqgrnCYjQXYfTFllQAD-_rNt_ksA-9DXAIsHRjBnT0/p.jpeg',
+      'https://previews.dropbox.com/p/thumb/AB5ZvzJGZTB9rlvFiW3jB6EWrGghHWbQpH8QC10U1vK_4HtDgW6hpQXbOki1o9mJAzq4AIjEU_abKVOf5CPRbEi0pWys74fVcbYJhJq43Hq-AOQxjNgCNZ5A720SvUy5X82D1D0GQzfXqGfSzuT29IZ0L9wxC6sLALVzngz6uTgUAlsw2T0J6tTAkCncLqpaXAxof08gqUYnumUCCt9AS1n3qoi8wlX0ainmULs22ManTdoLIbycYFCNABFXu0aAh9pIiKNE46X98roI23VJOSad8nZtRsLWTHS5PXh7KsXpOm28LRdgq6zIW4jrtTSHotJAZuUerYxj-Fb8Q_NBFesmLVfauzBuaEgMK5obuXYBVtUepLOCAk5H3288OMMkZz8/p.png',
     response: 'Beethoven',
   },
   {

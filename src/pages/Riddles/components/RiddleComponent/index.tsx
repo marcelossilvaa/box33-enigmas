@@ -1,37 +1,62 @@
-import { useForm } from 'react-hook-form';
-import * as z from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-
-const RiddleFormSchema = z.object({
-  task: z.string(),
-});
-
-type RiddleFormInput = z.infer<typeof RiddleFormSchema>;
+import { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 
 interface RiddleProps {
   title: string[];
   hint: string[];
   image: string;
-  onChangeSlider: (task: string) => void;
+  response: string;
+  onNextRiddle: () => void;
 }
 
 export function RiddleComponent({
   title,
   hint,
   image,
-  onChangeSlider,
+  response,
+  onNextRiddle,
 }: RiddleProps) {
-  const { register, handleSubmit } = useForm<RiddleFormInput>({
-    resolver: zodResolver(RiddleFormSchema),
+  const [userResponse, setUserResponse] = useState('');
+  const [showCorrectMessage, setShowCorrectMessage] = useState(false);
+  const [showErrorMessage, setShowErrorMessage] = useState(false);
+
+  const handleResponseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setUserResponse(event.target.value);
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (userResponse.toLowerCase() === response.toLowerCase()) {
+      setShowCorrectMessage(true);
+
+      setTimeout(() => {
+        onNextRiddle();
+        setShowCorrectMessage(false);
+        setUserResponse('');
+      }, 2000);
+    } else {
+      setShowErrorMessage(true);
+      setTimeout(() => {
+        setShowErrorMessage(false);
+      }, 3000); 
+    }
+  };
+
+  const correctMessageAnimation = useSpring({
+    opacity: showCorrectMessage ? 1 : 0,
+    color: 'green',
+    transform: showCorrectMessage ? 'scale(1)' : 'scale(0.5)',
   });
 
-  function handleSubmitRiddle(data: RiddleFormInput) {
-    console.log(data.task);
-    onChangeSlider(data.task);
-  }
+  const errorMessageAnimation = useSpring({
+    opacity: showErrorMessage ? 1 : 0,
+    color: 'red',
+    transform: showErrorMessage ? 'scale(1)' : 'scale(0.5)',
+  });
 
   return (
-    <div>
+    <div className="animate-content">
       <h1 className="text-center font-bold bg-zinc-950 p-1 rounded-r-sm w-screen">
         <span className="text-yellow-100">{title[0]}</span> {title[1]}
       </h1>
@@ -40,13 +65,14 @@ export function RiddleComponent({
         <img src={image} alt="" className="max-h-72 rounded-md max-w-[90%]" />
         <p className="text-center px-4">{hint[1]}</p>
         <form
-          onSubmit={handleSubmit(handleSubmitRiddle)}
+          onSubmit={handleSubmit}
           className="flex flex-col gap-3 items-center"
         >
           <input
-            {...register('task')}
-            required
             type="text"
+            value={userResponse}
+            onChange={handleResponseChange}
+            required
             className="w-72 mt-4 py-3 px-3 text-white rounded-md border-none bg-black-100 hover:border-b-2 hover:border-yellow-100 font-bold"
             placeholder="Digite sua resposta"
             id="inputRiddle"
@@ -58,6 +84,19 @@ export function RiddleComponent({
             Responder
           </button>
         </form>
+        {showCorrectMessage && (
+          <animated.div style={correctMessageAnimation}>
+            Resposta correta!
+          </animated.div>
+        )}
+        {showErrorMessage && (
+          <animated.div style={errorMessageAnimation}>
+            Resposta incorreta. Tente novamente!
+          </animated.div>
+        )}
+      </div>
+      <div className="p-4 flex items-center justify-center">
+        <div className="temperatureBar"></div>
       </div>
     </div>
   );
