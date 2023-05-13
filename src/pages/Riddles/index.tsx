@@ -11,6 +11,7 @@ interface Box {
   hint: string[];
   image: string;
   response: string;
+  isLastRiddle?: boolean;
 }
 
 export function RiddlesPage() {
@@ -45,6 +46,7 @@ export function RiddlesPage() {
                 image={dataRiddle.image}
                 response={dataRiddle.response}
                 onNextRiddle={handleNextRiddle}
+                isLastRiddle={dataRiddle.isLastRiddle}
               />
             );
           }

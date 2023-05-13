@@ -76,4 +76,15 @@ export const box1 = [
       'https://previews.dropbox.com/p/thumb/AB5hxMam8ItxrtCPWamqHcVRfzKuX-zf0iFOW64icAE5v43Y8n9SOA79_RKOrFU-pcf-xXR31KGnnrTPIDS1M5CuimjAaszT-gnK4rHRT8ANvmC0eLBBguS-WO7PgbT30ZzbQ7CF118QxvPjF-FaHAcD7ec8ZbZ4FPyNGK90itbLGwT7wq656UWPH60asoe9cGECPEbxSb_ch9dV9VbPWzFORC-78DDxUJNLO37zSdk7_Qpe5PccxOC9lEsjwtbZVuwFdEau76lVFCw4GpCMD7eEt0vmVcF3X6i7dYvlZxMupSkozZhNiZ9Nx9fLe5l2TRUn7yOZANk6pTxUlNorjlT6k_gJS-_tF0hhjdhqh6hkk1TCaE11bRsF0_KxpEnFwDA/p.png',
     response: 'Jane Austen',
   },
+  {
+    id: 8,
+    title: ['Box 1 | CONCLUÍDO', 'Categoria: Personalidades'],
+    hint: [
+      'Parabéns, você acabou de concluir o BOX 1. Composto por 7 Riddles.',
+      'Volte para a página inicial e se aventure nos outros Boxes.',
+    ],
+    image: 'https://cdn-icons-png.flaticon.com/512/1742/1742800.png',
+    response: '',
+    isLastRiddle: true,
+  },
 ];

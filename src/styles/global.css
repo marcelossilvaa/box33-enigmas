@@ -96,7 +96,7 @@
   }
 
   .temperatureBar {
-    width: 150px;
+    width: 200px;
     height: 7px;
     background: rgb(242, 15, 13);
     background: linear-gradient(
@@ -104,6 +104,12 @@
       rgba(242, 15, 13, 1) 0%,
       rgba(0, 198, 255, 1) 100%
     );
+    position: relative;
+  }
+
+  #ball {
+    position: relative;
+    top: -9px;
   }
 
   #button {
