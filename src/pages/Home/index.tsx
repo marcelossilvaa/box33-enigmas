@@ -1,6 +1,7 @@
 import { Boxes } from '../Home/components/Boxes/boxes';
-import { Sobre } from '../Home/components/Sobre/sobre';
+import { Sobre } from './components/About/about';
 import { Banner } from './components/Banner/banner';
+import { ModeC } from './components/ModeC/modec';
 
 export function HomePage() {
   return (
@@ -11,6 +12,7 @@ export function HomePage() {
         subTitle2={`Primeiro box disponível`}
       />
       <Boxes />
+      <ModeC />
       <Sobre />
     </>
   );

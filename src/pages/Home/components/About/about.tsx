@@ -31,17 +31,27 @@ export function Sobre() {
       </div>
       <div className="flex justify-center items-center flex-col py-6">
         <h1 className="text-lg">Faça parte da nossa comunidade</h1>
-        <div className="flex flex-col gap-3 py-4">
-          <a href="" className="btn-sobre">
-            <WhatsappLogo size={35} /> Grupo WhatsApp
+        <div className="flex gap-3 py-4">
+          <a
+            href="https://chat.whatsapp.com/DWzC6wudhQ15kebGp0aCNZ "
+            className="btn-sobre"
+            target={'_blank'}
+          >
+            <WhatsappLogo size={35} />
           </a>
-          <a href="" className="btn-sobre">
-            <InstagramLogo size={35} /> Comunidade Instagram
+          <a
+            href="https://www.instagram.com/box33enigmas/"
+            className="btn-sobre"
+            target={'_blank'}
+          >
+            <InstagramLogo size={35} />
           </a>
         </div>
       </div>
       <div className="flex justify-end">
-        <ArrowUp size={36} />
+        <a href="#home">
+          <ArrowUp size={36} />
+        </a>
       </div>
     </div>
   );

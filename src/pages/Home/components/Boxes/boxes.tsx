@@ -4,8 +4,9 @@ import img3 from '../../../../assets/homepage/boxes/img3.jpg';
 import img4 from '../../../../assets/homepage/boxes/img4.jpg';
 import literatura from '../../../../assets/homepage/boxes/literatura.jpg';
 import { useState, useEffect, useRef } from 'react';
-import { Play } from 'phosphor-react';
+import { Play, Question } from 'phosphor-react';
 import { NavLink } from 'react-router-dom';
+import { Modal } from '../../../../componets/Modal';
 
 const boxes = [
   {
@@ -44,14 +45,29 @@ export function Boxes() {
       const scrollWidth = carousel.current.scrollWidth;
       //@ts-ignore
       const offsetWidth = carousel.current.offsetWidth;
-      // console.log(scrollWidth, offsetWidth);
       setWidth(scrollWidth - offsetWidth);
     }
   }, [carousel]);
 
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
   return (
     <div id="boxes">
-      <h1 className="flex justify-center text-xl pt-8">Boxes</h1>
+      <h1 className="flex justify-center text-xl pt-8 gap-2">
+        Boxes
+        <button onClick={handleOpenModal}>
+          <Question size={25} color="#f7f7f7" />
+        </button>
+        <Modal isOpen={openModal} onClose={handleCloseModal} />
+      </h1>
       <div className="mx-auto max-w-[72rem] w-full max-xl:w-[95%] flex items-center justify-center">
         <motion.div
           ref={carousel}

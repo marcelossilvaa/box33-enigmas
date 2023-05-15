@@ -23,7 +23,6 @@ export function RiddleComponent({
   const [userResponse, setUserResponse] = useState('');
   const [showCorrectMessage, setShowCorrectMessage] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
-  const [temperature, setTemperature] = useState(0);
   const [ballPosition, setBallPosition] = useState(0);
 
   const handleResponseChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -99,7 +98,6 @@ export function RiddleComponent({
     const maxLength = Math.max(cleanStr1.length, cleanStr2.length);
     const differencePercent = (distance / maxLength) * 100;
 
-    // Limita o valor de retorno entre 0 e 100
     return Math.min(Math.max(differencePercent, 0), 100);
   }
 

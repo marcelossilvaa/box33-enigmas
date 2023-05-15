@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   body {
     font-family: 'Poppins', sans-serif;
@@ -101,8 +102,8 @@
     background: rgb(242, 15, 13);
     background: linear-gradient(
       294deg,
-      rgba(242, 15, 13, 1) 0%,
-      rgba(0, 198, 255, 1) 100%
+      rgb(68, 241, 0) 0%,
+      rgb(255, 0, 0) 100%
     );
     position: relative;
   }
@@ -127,5 +128,9 @@
     100% {
       opacity: 1;
     }
+  }
+
+  .animate-overlay {
+    animation: fade-out 0.5s ease;
   }
 }

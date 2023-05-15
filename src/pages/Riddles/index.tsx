@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { RiddleComponent } from './components/RiddleComponent';
+import { useLocation } from 'react-router-dom';
 import { box1 } from '../../@helpers/box1';
 import { box2 } from '../../@helpers/box2';
 import { box3 } from '../../@helpers/box3';
-import { RiddleComponent } from './components/RiddleComponent';
-import { useLocation } from 'react-router-dom';
+import { box4 } from '../../@helpers/box4';
 
 interface Box {
   id: number;
@@ -27,6 +28,8 @@ export function RiddlesPage() {
     selectedBox = box2;
   } else if (dataBox.includes('box3')) {
     selectedBox = box3;
+  } else if (dataBox.includes('box4')) {
+    selectedBox = box4;
   }
 
   const handleNextRiddle = () => {

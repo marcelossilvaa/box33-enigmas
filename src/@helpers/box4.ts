@@ -1,4 +1,4 @@
-export const box3 = [
+export const box4 = [
   {
     id: 1,
     title: ['Box 1 | Riddle 1', 'Categoria: Personalidades'],
@@ -94,8 +94,7 @@ export const box3 = [
       'Parabéns, você acabou de concluir o BOX 1. Composto por 7 Riddles.',
       'Volte para a página inicial e se aventure nos outros Boxes.',
     ],
-    image:
-      'https://gifs.eco.br/wp-content/uploads/2021/06/gifs-de-parabens-19.gif',
+    image: 'https://cdn-icons-png.flaticon.com/512/1742/1742800.png',
     response: '',
     isLastRiddle: true,
   },
