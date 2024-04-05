@@ -63,9 +63,17 @@
     }
   }
 
-  #item {
+  /* Title Banner */
+  #item-banner {
     text-shadow: 3px 3px 3px black;
   }
+
+  /* Card boxes */
+  #item-card-boxes {
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(15, 24, 25, 0.7);
+  }
+
   .btn-sobre {
     border-radius: 10px;
     background: black;
