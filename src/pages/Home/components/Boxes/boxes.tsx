@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import img2 from '../../../../assets/homepage/boxes/img2.jpg';
-import img3 from '../../../../assets/homepage/boxes/img3.jpg';
+import img2 from '../../../../assets/homepage/boxes/box_historia.jpg';
+import img3 from '../../../../assets/homepage/boxes/box_tecnologia.jpg';
 import img4 from '../../../../assets/homepage/boxes/img4.jpg';
 import literatura from '../../../../assets/homepage/boxes/literatura.jpg';
 import { useState, useEffect, useRef } from 'react';
@@ -12,25 +12,25 @@ const boxes = [
   {
     image: literatura,
     category: 'Nomes da Literatura',
-    description: '7 riddles',
+    description: '7 enigmas',
     dataBox: 'box1',
   },
   {
     image: img2,
     category: 'História',
-    description: '7 riddles',
+    description: '7 enigmas',
     dataBox: 'box2',
   },
   {
     image: img3,
     category: 'Tecnologia',
-    description: '7 riddles',
+    description: '7 enigmas',
     dataBox: 'box3',
   },
   {
     image: img4,
     category: 'Universo',
-    description: '7 riddles',
+    description: '7 enigmas',
     dataBox: 'box4',
   },
 ];
@@ -92,10 +92,10 @@ export function Boxes() {
                   id="img"
                 />
                 <div className="flex flex-col justify-start relative bottom-[150px] pl-4">
-                  <h1 className="text-2xl" id="item">
+                  <h1 className="text-2xl" id="item-card-boxes">
                     {item.category}
                   </h1>
-                  <h2 className="text-lg" id="item">
+                  <h2 className="text-base mb-2" id="item-card-boxes">
                     {item.description}
                   </h2>
 
@@ -106,8 +106,7 @@ export function Boxes() {
                     }}
                   >
                     <button
-                      className="flex justify-center items-center text-base border-[1px] rounded-md w-36 p-1 gap-1 bg-transparent "
-                      id="button"
+                      className="flex justify-center items-center text-base border-[1px] rounded-md w-36 p-1 gap-1 bg-black-500 hover:bg-zinc-800 hover:border-y-black-100"
                     >
                       START <Play size={24} />
                     </button>
