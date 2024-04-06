@@ -15,7 +15,7 @@ export const box2 = [
       'Minha dama carrega uma tocha de liberdade.',
     ],
     image: Riddle1,
-    response: 'Estátua da Liberdade',
+    response: 'estatua da liberdade',
   },
   {
     id: 2,
