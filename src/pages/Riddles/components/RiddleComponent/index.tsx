@@ -63,45 +63,67 @@ export function RiddleComponent({
     transform: showErrorMessage ? 'scale(1)' : 'scale(0.5)',
   });
 
-  function calculateBallPosition(str1: string, str2: string): number {
-    const maxLength = Math.max(str1.length, str2.length);
-    const difference = calculateStringDifference(str1, str2);
-    const percentage = (difference / maxLength) * 100;
-    let ballPosition = Math.round(Math.min(Math.max(percentage)));
-    if (ballPosition > 400) {
-      ballPosition = 0;
-    } else if (ballPosition < 400 && ballPosition > 350) {
-      ballPosition = 20;
-    } else if (ballPosition < 350 && ballPosition > 300) {
-      ballPosition = 40;
-    } else if (ballPosition < 300 && ballPosition > 250) {
-      ballPosition = 60;
-    } else if (ballPosition < 250 && ballPosition > 200) {
-      ballPosition = 80;
-    } else if (ballPosition < 200 && ballPosition > 100) {
-      ballPosition = 90;
-    }
-    console.log(ballPosition);
-    return ballPosition;
-  }
-
-  function calculateStringDifference(str1: string, str2: string): number {
-    function removerAcentosEspacos(str: string): string {
+  function calculateStringSimilarity(str1: string, str2: string): number {
+    function normalizeString(str: string): string {
       return str
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
-        .replace(/\s+/g, '') // Substitui múltiplos espaços por um único espaço
-        .toLowerCase(); // Converte para minúsculas para garantir comparação de caso insensível
+        .replace(/[^\w\s]/gi, '')
+        .toLowerCase();
     }
 
-    const cleanStr1 = removerAcentosEspacos(str1).replace(/[^\w\s]/gi, '');
-    const cleanStr2 = removerAcentosEspacos(str2).replace(/[^\w\s]/gi, '');
+    const normalized1 = normalizeString(str1);
+    const normalized2 = normalizeString(str2);
 
-    const distance = levenshteinDistance(cleanStr1, cleanStr2);
-    const maxLength = Math.max(cleanStr1.length, cleanStr2.length);
-    const differencePercent = (distance / maxLength) * 100;
+    if (normalized1 === normalized2) return 1; // Resposta exata
+    if (normalized1.length === 0 || normalized2.length === 0) return 0;
 
-    return Math.min(Math.max(differencePercent, 0), 100);
+    // Divide as strings em palavras
+    const words1 = normalized1.split(/\s+/);
+    const words2 = normalized2.split(/\s+/);
+
+    // Calcula a similaridade para cada palavra da resposta do usuário
+    const wordSimilarities = words1.map(word1 => {
+      // Para cada palavra do usuário, encontra a maior similaridade com qualquer palavra da resposta correta
+      const wordScores = words2.map(word2 => {
+        if (word1 === word2) return 1; // Palavra exatamente igual
+        
+        // Calcula similaridade por substring
+        const isSubstring = word2.includes(word1) || word1.includes(word2);
+        if (isSubstring) {
+          const lengthRatio = Math.min(word1.length, word2.length) / Math.max(word1.length, word2.length);
+          return 0.8 * lengthRatio; // Peso alto para substrings
+        }
+
+        // Calcula distância de Levenshtein para palavras similares
+        const distance = levenshteinDistance(word1, word2);
+        const maxLength = Math.max(word1.length, word2.length);
+        const similarity = 1 - distance / maxLength;
+
+        // Retorna similaridade apenas se for significativa
+        return similarity > 0.5 ? similarity : 0;
+      });
+
+      return Math.max(...wordScores);
+    });
+
+    // Calcula a média ponderada das similaridades
+    const totalWords = words2.length; // número de palavras na resposta correta
+    const matchedWords = wordSimilarities.filter(score => score > 0).length;
+    const averageSimilarity = wordSimilarities.reduce((sum, score) => sum + score, 0) / totalWords;
+    
+    // Penaliza por diferença no número de palavras
+    const lengthPenalty = Math.min(matchedWords / totalWords, 1);
+    
+    // Combina os fatores
+    const finalSimilarity = averageSimilarity * lengthPenalty;
+
+    return Math.max(0, Math.min(1, finalSimilarity));
+  }
+
+  function calculateBallPosition(str1: string, str2: string): number {
+    const similarity = calculateStringSimilarity(str1, str2);
+    return Math.round(similarity * 100);
   }
 
   function levenshteinDistance(str1: string, str2: string): number {
