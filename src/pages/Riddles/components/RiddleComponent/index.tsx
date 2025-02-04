@@ -6,10 +6,10 @@ import { useSpring, animated } from 'react-spring';
 interface RiddleProps {
   title: string[];
   hint: string[];
-  image: string;
+  image: string | undefined;
   response: string;
   isLastRiddle?: boolean;
-  onNextRiddle: () => void;
+  onNextRiddle?: () => void;
 }
 
 export function RiddleComponent({
@@ -35,7 +35,9 @@ export function RiddleComponent({
     if (userResponse.toLowerCase() === response.toLowerCase()) {
       setShowCorrectMessage(true);
       setTimeout(() => {
-        onNextRiddle();
+        if (onNextRiddle) {
+          onNextRiddle();
+        }
         setShowCorrectMessage(false);
         setUserResponse('');
       }, 2000);
@@ -88,7 +90,8 @@ export function RiddleComponent({
       return str
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '')
-        .replace(/\s/g, '');
+        .replace(/\s+/g, '') // Substitui múltiplos espaços por um único espaço
+        .toLowerCase(); // Converte para minúsculas para garantir comparação de caso insensível
     }
 
     const cleanStr1 = removerAcentosEspacos(str1).replace(/[^\w\s]/gi, '');

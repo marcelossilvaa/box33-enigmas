@@ -1,7 +1,7 @@
 export const box4 = [
   {
     id: 1,
-    title: ['Box 1 | Riddle 1', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 1', 'Categoria: Universo'],
     hint: [
       'Um gênio que viveu há muitos séculos, mas suas obras ainda são celebradas.',
       'Seu legado influenciou o teatro, a literatura e a cultura popular por séculos.',
@@ -12,7 +12,7 @@ export const box4 = [
   },
   {
     id: 2,
-    title: ['Box 1 | Riddle 2', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 2', 'Categoria: Universo'],
     hint: [
       'Projetou invenções que estavam muito à frente de seu tempo.',
       'Renascentista.',
@@ -23,7 +23,7 @@ export const box4 = [
   },
   {
     id: 3,
-    title: ['Box 1 | Riddle 3', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 3', 'Categoria: Universo'],
     hint: [
       'Sua deficiência o levou a uma profunda depressão, mas não o impediu de continuar a criar música incrível.',
       'O clássico dos clássicos.',
@@ -34,7 +34,7 @@ export const box4 = [
   },
   {
     id: 4,
-    title: ['Box 1 | Riddle 4', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 4', 'Categoria: Universo'],
     hint: [
       'Variedade de estilos artísticos, incluindo o Cubismo, o Surrealismo e o Neoclassicismo.',
       'Sua arte reflete vida turbulenta, com relacionamentos tumultuados e Guerra Civil.',
@@ -45,7 +45,7 @@ export const box4 = [
   },
   {
     id: 5,
-    title: ['Box 1 | Riddle 5', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 5', 'Categoria: Universo'],
     hint: [
       'Simbolismo e metáforas criam camadas de significado em suas pinturas.',
       'Sua arte explora sua identidade, incluindo sua mexicanidade e sua luta com a saúde e a sexualidade.',
@@ -56,7 +56,7 @@ export const box4 = [
   },
   {
     id: 6,
-    title: ['Box 1 | Riddle 6', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 6', 'Categoria: Universo'],
     hint: [
       'Arte que explora questões sociais e políticas, como luta da classe e a opressão dos pobres.',
       'Comédia física e patética torna-o um ícone cultural e artístico duradouro.',
@@ -67,7 +67,7 @@ export const box4 = [
   },
   {
     id: 7,
-    title: ['Box 1 | Riddle 7', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 7', 'Categoria: Universo'],
     hint: [
       'Eu fui uma das mais importantes escritoras da literatura inglesa e...',
       '... minhas heroínas lutaram por seu lugar em um mundo dominado pelos homens.',
@@ -78,7 +78,7 @@ export const box4 = [
   },
   {
     id: 7,
-    title: ['Box 1 | Riddle 7', 'Categoria: Personalidades'],
+    title: ['Box 4 | Riddle 7', 'Categoria: Universo'],
     hint: [
       'Eu fui uma das mais importantes escritoras da literatura inglesa e...',
       '... minhas heroínas lutaram por seu lugar em um mundo dominado pelos homens.',
@@ -89,9 +89,9 @@ export const box4 = [
   },
   {
     id: 8,
-    title: ['Box 1 | CONCLUÍDO', 'Categoria: Personalidades'],
+    title: ['Box 4 | CONCLUÍDO', 'Categoria: Universo'],
     hint: [
-      'Parabéns, você acabou de concluir o BOX 1. Composto por 7 Riddles.',
+      'Parabéns, você acabou de concluir o Box 4. Composto por 7 Riddles.',
       'Volte para a página inicial e se aventure nos outros Boxes.',
     ],
     image: 'https://cdn-icons-png.flaticon.com/512/1742/1742800.png',

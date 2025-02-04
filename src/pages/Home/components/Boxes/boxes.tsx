@@ -60,8 +60,8 @@ export function Boxes() {
   };
 
   return (
-    <div id="boxes">
-      <h1 className="flex justify-center text-xl pt-8 gap-2">
+    <div id="boxes" className='py-16'>
+      <h1 className="flex justify-center text-xl pt-8 pb-4 gap-2">
         Boxes
         <button onClick={handleOpenModal}>
           <Question size={25} color="#f7f7f7" />

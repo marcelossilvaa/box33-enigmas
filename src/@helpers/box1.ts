@@ -9,7 +9,7 @@ import Riddle7 from '../assets/boxes/box1/box-07.png'
 export const box1 = [
   {
     id: 1,
-    title: ['Box 1 | Riddle 1', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 1', 'Categoria: Nomes da Literatura'],
     hint: [
       'Um gênio que viveu há muitos séculos, mas suas obras ainda são celebradas.',
       'Seu legado influenciou o teatro, a literatura e a cultura popular por séculos.',
@@ -19,7 +19,7 @@ export const box1 = [
   },
   {
     id: 2,
-    title: ['Box 1 | Riddle 2', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 2', 'Categoria: Nomes da Literatura'],
     hint: [
       'Projetou invenções que estavam muito à frente de seu tempo.',
       'Renascentista.',
@@ -29,7 +29,7 @@ export const box1 = [
   },
   {
     id: 3,
-    title: ['Box 1 | Riddle 3', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 3', 'Categoria: Nomes da Literatura'],
     hint: [
       'Sua deficiência o levou a uma profunda depressão, mas não o impediu de continuar a criar música incrível.',
       'O clássico dos clássicos.',
@@ -39,7 +39,7 @@ export const box1 = [
   },
   {
     id: 4,
-    title: ['Box 1 | Riddle 4', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 4', 'Categoria: Nomes da Literatura'],
     hint: [
       'Variedade de estilos artísticos, incluindo o Cubismo, o Surrealismo e o Neoclassicismo.',
       'Sua arte reflete vida turbulenta, com relacionamentos tumultuados e Guerra Civil.',
@@ -49,7 +49,7 @@ export const box1 = [
   },
   {
     id: 5,
-    title: ['Box 1 | Riddle 5', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 5', 'Categoria: Nomes da Literatura'],
     hint: [
       'Simbolismo e metáforas criam camadas de significado em suas pinturas.',
       'Sua arte explora sua identidade, incluindo sua mexicanidade e sua luta com a saúde e a sexualidade.',
@@ -59,7 +59,7 @@ export const box1 = [
   },
   {
     id: 6,
-    title: ['Box 1 | Riddle 6', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 6', 'Categoria: Nomes da Literatura'],
     hint: [
       'Arte que explora questões sociais e políticas, como luta da classe e a opressão dos pobres.',
       'Comédia física e patética torna-o um ícone cultural e artístico duradouro.',
@@ -69,7 +69,7 @@ export const box1 = [
   },
   {
     id: 7,
-    title: ['Box 1 | Riddle 7', 'Categoria: Personalidades'],
+    title: ['Box 1 | Riddle 7', 'Categoria: Nomes da Literatura'],
     hint: [
       'Eu fui uma das mais importantes escritoras da literatura inglesa e...',
       '... minhas heroínas lutaram por seu lugar em um mundo dominado pelos homens.',
@@ -79,7 +79,7 @@ export const box1 = [
   },
   {
     id: 8,
-    title: ['Box 1 | CONCLUÍDO', 'Categoria: Personalidades'],
+    title: ['Box 1 | CONCLUÍDO', 'Categoria: Nomes da Literatura'],
     hint: [
       'Parabéns, você acabou de concluir o BOX 1. Composto por 7 Riddles.',
       'Volte para a página inicial e se aventure nos outros Boxes.',

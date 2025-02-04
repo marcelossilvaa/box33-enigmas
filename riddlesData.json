@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": ["Box 1 | Riddle 1", "Categoria: Personalidades"],
+    "hints": [
+      "Um gênio que viveu há muitos séculos, mas suas obras ainda são celebradas.",
+      "Seu legado influenciou o teatro, a literatura e a cultura popular por séculos."
+    ],
+    "image": "caminho/para/imagem1.jpg",
+    "response": "William Shakespeare"
+  },
+  {
+    "id": 2,
+    "title": ["Box 2 | Riddle 1", "Categoria: Lugares"],
+    "hints": [
+      "Uma cidade famosa por seus canais e gôndolas.",
+      "É conhecida como 'A cidade flutuante'."
+    ],
+    "image": "caminho/para/imagem2.jpg",
+    "response": "Veneza"
+  }
+]
