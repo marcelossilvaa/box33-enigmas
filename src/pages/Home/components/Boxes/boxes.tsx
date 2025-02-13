@@ -90,12 +90,13 @@ export function Boxes() {
                   alt="Texto alt"
                   className="w-full h-full rounded-xl pointer-events-none"
                   id="img"
+                  style={{ filter: 'brightness(50%)' }}
                 />
                 <div className="flex flex-col justify-start relative bottom-[150px] pl-4">
-                  <h1 className="text-2xl" id="item-card-boxes">
+                  <h1 className="text-2xl" >
                     {item.category}
                   </h1>
-                  <h2 className="text-base mb-2" id="item-card-boxes">
+                  <h2 className="text-base mb-2" >
                     {item.description}
                   </h2>
 
